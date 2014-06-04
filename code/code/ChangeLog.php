@@ -11,7 +11,7 @@ class ChangeLog extends DataObject {
 	);
 
 	private static $summary_fields = array(
-		'Title'
+		'What'
 	);
 
 }
