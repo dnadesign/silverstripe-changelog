@@ -6,9 +6,7 @@
 class ChangeLogAdmin extends ModelAdmin {
 
 	private static $managed_models = array(
-		'ChangeLog',
-		'AccommodationCategory',
-		'AccommodationRoom'
+		'ChangeLog'
 	);
 
 	private static $menu_title = 'Logs';
