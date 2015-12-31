@@ -1,17 +1,17 @@
 <?php
-class ChangeLog extends DataObject {
+class ChangeLog extends DataObject
+{
 
-	private static $db = array(
-		'What' => 'Varchar',
-		'Details' => 'Text'
-	);
+    private static $db = array(
+        'What' => 'Varchar',
+        'Details' => 'Text'
+    );
 
-	private static $has_one = array(
-		'Who' => 'Member'
-	);
+    private static $has_one = array(
+        'Who' => 'Member'
+    );
 
-	private static $summary_fields = array(
-		'What'
-	);
-
+    private static $summary_fields = array(
+        'What'
+    );
 }
