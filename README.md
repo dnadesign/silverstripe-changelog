@@ -1,4 +1,4 @@
 silverstripe-changelog
 ======================
 
-Basic action logging to a dataobject for SS
+Basic action logging to a DataObject for SS

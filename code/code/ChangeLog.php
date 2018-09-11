@@ -1,6 +1,13 @@
 <?php
+
+namespace DNADesign\ChangeLog;
+
+use SilverStripe\ORM\DataObject;
+use SilverStripe\Security\Member;
+
 class ChangeLog extends DataObject
 {
+    private static $table_name = 'ChangeLog';
 
     private static $db = array(
         'What' => 'Varchar',
@@ -8,7 +15,7 @@ class ChangeLog extends DataObject
     );
 
     private static $has_one = array(
-        'Who' => 'Member'
+        'Who' => Member::class
     );
 
     private static $summary_fields = array(
