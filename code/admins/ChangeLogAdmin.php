@@ -1,13 +1,17 @@
 <?php
 
+namespace DNADesign\ChangeLog;
+
+use SilverStripe\Admin\ModelAdmin;
+use SilverStripe\Security\Permission;
+
 /**
- * Model admin for ChangeLogs
+ * Model admin for ChangeLog objects
  */
 class ChangeLogAdmin extends ModelAdmin
 {
-
     private static $managed_models = array(
-        'ChangeLog'
+        'DNADesign\ChangeLog\ChangeLog'
     );
 
     private static $menu_title = 'Logs';

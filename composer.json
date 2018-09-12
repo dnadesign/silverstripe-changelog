@@ -1,20 +1,31 @@
 {
     "name": "dnadesign/silverstripe-changelog",
-    "description": "Change log.",
-    "type": "silverstripe-module",
-    "keywords": ["silverstripe", "log", "logging"],
+    "description": "Change log object and admin",
+    "type": "silverstripe-vendormodule",
     "license": "BSD-3-Clause",
+    "homepage": "https://github.com/dnadesign/silverstripe-changelog",
+    "keywords": [
+        "silverstripe",
+        "log",
+        "logging"
+    ],
     "authors": [
-    {
-        "name": "John Milmine",
-        "email": "john.milmine@dna.co.nz"
-    }
+        {
+            "name": "John Milmine",
+            "email": "john.milmine@dna.co.nz"
+        }
     ],
     "require":
     {
-       "silverstripe/framework": "3.*"
+       "silverstripe/framework": "^4"
     },
     "extra": {
         "installer-name": "changelog"
-    }
+    },
+    "autoload": {
+        "psr-4": {
+            "dnadesign\\http2serverpush\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
 }
