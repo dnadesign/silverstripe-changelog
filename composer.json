@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "dnadesign\\http2serverpush\\": "src/"
+            "dnadesign\\changelog\\": "src/"
         }
     },
     "minimum-stability": "dev"
